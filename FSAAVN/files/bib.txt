@@ -1,0 +1,6 @@
+@inproceedings{YinfengBMVC2022FSAAVN,
+    title = {Pay Self-Attention to Audio-Visual Navigation},
+    author = {Yinfeng Yu, Lele Cao, Fuchun Sun, Xiaohong Liu, Liejun Wang},
+    year = {2022},
+    booktitle={BMVC},
+}               
