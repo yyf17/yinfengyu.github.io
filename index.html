@@ -142,6 +142,42 @@
 
 
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                
+                <tr onmouseout="FSAAVN_stop()" onmouseover="FSAAVN_start()">
+                    <td width="35%">
+                        <div class="one">
+                            <div class="two" id='FSAAVN'><img src='images/fsaavn.png' alt="sym" width="100%"
+                                                                  style="border-style: none"></div>
+                        </div>
+                        <script type="text/javascript">
+                            function FSAAVN_start() {
+                                document.getElementById('FSAAVN').style.opacity = "0.9";
+                            }
+
+                            function FSAAVN_stop() {
+                                document.getElementById('FSAAVN').style.opacity = "1";
+                            }
+
+                            friendly_stop()
+                        </script>
+                    </td>
+                    <td valign="top" width="65%">
+                        <p><a href="">
+                            <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
+                            <heading>Pay Self-Attention to Audio-Visual Navigation</heading>
+                            <a class="github-button" href="https://github.com/yyf17/FSAAVN" data-icon="octicon-star"
+                               data-show-count="true">Star</a>
+                        </a><br>
+                            <strong>Yinfeng Yu</strong>, Lele Cao, Fuchun Sun, Xiaohong Liu, Liejun Wang <br>
+                            <em>BMVC 2022<br></em>
+                            <a href="">paper</a> |
+                            <a href="FSAAVN/index.html">project</a> |
+                            <a href="https://github.com/yyf17/FSAAVN/tree/main">code</a>
+                    </td>
+                </tr>
+                
+                
+                
                 <tr onmouseout="saavn_stop()" onmouseover="saavn_start()">
                     <td width="35%">
                         <div class="one">
