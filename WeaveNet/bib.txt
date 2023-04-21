@@ -1,0 +1,21 @@
+@InProceedings{10.1007/978-981-16-9247-5_1,
+author="Yu, Yinfeng
+and Jia, Zhenhong
+and Shi, Fei
+and Zhu, Meiling
+and Wang, Wenjun
+and Li, Xiuhong",
+editor="Sun, Fuchun
+and Hu, Dewen
+and Wermter, Stefan
+and Yang, Lei
+and Liu, Huaping
+and Fang, Bin",
+title="WeaveNet: End-to-End Audiovisual Sentiment Analysis",
+booktitle="Cognitive Systems and Information Processing",
+year="2022",
+publisher="Springer Nature Singapore",
+address="Singapore",
+pages="3--16",
+isbn="978-981-16-9247-5"
+}
