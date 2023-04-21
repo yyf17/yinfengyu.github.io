@@ -146,6 +146,39 @@
 
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 
+                                <tr onmouseout="E3VN_stop()" onmouseover="E3VN_start()">
+                    <td width="35%">
+                        <div class="one">
+                            <div class="two" id='E3VN'><img src='images/E3VN.bmp' alt="sym" width="100%"
+                                                                  style="border-style: none"></div>
+                        </div>
+                        <script type="text/javascript">
+                            function E3VN_start() {
+                                document.getElementById('E3VN').style.opacity = "0.9";
+                            }
+
+                            function E3VN_stop() {
+                                document.getElementById('E3VN').style.opacity = "1";
+                            }
+
+                            friendly_stop()
+                        </script>
+                    </td>
+                    <td valign="top" width="65%">
+                        <p><a href="">
+                            <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
+                            <heading>Echo-Enhanced Embodied Visual Navigation</heading>
+                            <a class="github-button" href="https://github.com/yyf17/E3VN" data-icon="octicon-star"
+                               data-show-count="true">Star</a>
+                        </a><br>
+                            <strong>Yinfeng Yu</strong>, Lele Cao, Fuchun Sun, Chao Yang, Huicheng Lai, Wenbing Huang <br>
+                            <em>Neural Computation 2023<br></em>
+                            <a href="https://direct.mit.edu/neco/article-pdf/35/5/958/2079357/neco_a_01579.pdf">paper</a> |
+                            <a href="E3VN/index.html">project</a> 
+                            <!-- | <a href="https://github.com/yyf17/E3VN/tree/main">code</a> --!>
+                    </td>
+                </tr>
+
                 <tr onmouseout="FSAAVN_stop()" onmouseover="FSAAVN_start()">
                     <td width="35%">
                         <div class="one">
@@ -178,9 +211,7 @@
                             <a href="https://github.com/yyf17/FSAAVN/tree/main">code</a>
                     </td>
                 </tr>
-                
-                
-                
+                             
                 <tr onmouseout="saavn_stop()" onmouseover="saavn_start()">
                     <td width="35%">
                         <div class="one">
