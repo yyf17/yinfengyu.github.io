@@ -8,17 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>FSAAVN</title>
+    <title>SAAVN</title>
   </head>
   <body>
   	<div style="text-align:center;">
 		<div id="intro" style="width: 100%; padding:40px; text-align:center;">
-	        <h1>Pay Self-Attention to Audio-Visual Navigation</h1>
+	        <h1>Echo-Enhanced Embodied Visual Navigation</h1>
         </div>
 		<div class="container">
 		  <div class="row">
 		    <div class="col-sm">
-		      <a href="https://yyf17.github.io/"><h4> Yinfeng Yu</h4></a>    
+		      <a href="https://yyf17.github.io/"><h4> Yinfeng Yu </h4></a>    
 		    </div>
 		    <div class="col-sm">
 		      <a href=""><h4> Lele Cao</h4></a> 
@@ -27,11 +27,14 @@
 		      <a href=""><h4> Fuchun Sun</h4></a> 
 		    </div>
 		    <div class="col-sm">
-		      <a href=""><h4> Xiaohong Liu</h4></a> 
-                    </div>
-	            <div class="col-sm">
-		      <a href=""><h4> Liejun Wang</h4></a> 
-                    </div>
+		      <a ><h4> Chao Yang </h4></a> 
+            </div>
+            <div class="col-sm">
+                <a href=""><h4> Huicheng Lai </h4></a> 
+            </div>
+            <div class="col-sm">
+                <a href=""><h4> Wenbing Huang </h4></a> 
+            </div>
 		  </div>
 		  <p></p>
 		  <div class="row">
@@ -41,24 +44,22 @@
 		  </div>
 		  <div class="row">
 		  	<div class="col-lg">
-		   	<h4> British Machine Vision Conference (BMVC), 2022 </h4>
+		   	<h4> Neural Computation (2023) </h4>
 		    </div>
 		  </div>
 		  
 		  <div class="row">
-		  	<div class="col-lg">
-		    	<center><h2><strong>
-			<a href="https://arxiv.org/pdf/2210.01353.pdf">Paper</a> |
-			<a href="https://github.com/yyf17/FSAAVN/tree/main">Code</a> |
-			<a href=".">Slides</a> |
-    		  	<a href="./files/bib.txt">Bibtex</a> </strong> </h2></center> 
+		  			    <div class="col-lg">
+		    <center><h2><strong>
+	<a href="https://direct.mit.edu/neco/article-pdf/35/5/958/2079357/neco_a_01579.pdf">Paper</a> |
+    <a href="./files/bib.txt">Bibtex</a> </strong> </h2></center> 
 			</div>
 		  </div>
 		  <br>
 		  
 		  <div class="row">
 		  	<div class="col-lg">
-		  	<img src="./files/title-fig.PNG" class="img-fluid" style="height:430px;">
+		  	<img src="./files/saavn.png" class="img-fluid" style="height:215px;">
 		  	</div>
 		  </div>
 
@@ -70,263 +71,42 @@
 		  </div>
 		  <div class="row">
 		  	<div style="font-size:16px"><p align="justify">
-				Audio-visual embodied navigation, as a hot research topic, aims training a robot to reach an audio target using egocentric visual (from the sensors mounted on the robot) and audio (emitted from the target) input. 
-				The audio-visual information fusion strategy is naturally important to the navigation performance, but the state-of-the-art methods still simply concatenate the visual and audio features, potentially ignoring the direct impact of context.
-				Moreover, the existing approaches requires either phase-wise training or additional aid (e.g. topology graph and sound semantics). 
-				Up till this date, the work that deals with the more challenging setup with moving target(s) is still rare.
-				As a result, we propose an end-to-end framework FSAAVN (feature self-attention audio-visual navigation) to learn chasing after a moving audio target using a context-aware audio-visual fusion strategy implemented as a self-attention module.
-				Our thorough experiments validate the superior performance (both quantitatively and qualitatively) of FSAAVN in comparison with the state-of-the-arts, and also provide unique insights about the choice of visual modalities, visual/audio encoder backbones and fusion patterns.
-				Project:  <a href="https://yyf17.github.io/FSAAVN">https://yyf17.github.io/FSAAVN</a>.
+                Visual navigation involves a movable robotic agent striving to reach a point goal (target location) using vision sensory input. While navigation with ideal visibility has seen plenty of success, it becomes challenging in suboptimal visual conditions like poor illumination, where traditional approaches suffer from severe performance degradation. We propose E3VN (echo-enhanced embodied visual navigation) to effectively perceive the surroundings even under poor visibility to mitigate this problem. This is made possible by adopting an echoer that actively perceives the environment via auditory signals. E3VN models the robot agent as playing a cooperative Markov game with that echoer. The action policies of robot and echoer are jointly optimized to maximize the reward in a two-stream actor-critic architecture. During optimization, the reward is also adaptively decomposed into the robot and echoer parts. Our experiments and ablation studies show that E3VN is consistently effective and robust in point goal navigation tasks, especially under nonideal visibility.
 		  	</p>
 		  	</div>
 		  </div>
 
 		  <br><br>
-		  <div class="row">
-		  	<div class="col-sm">
-		  		<h2> Materials </h2><p></p>
-		  	</div>
-		  </div>
-		  <div class="row">
 
-		    <div class="col-lg">
-		    	<a href="./files/BMVC_FSAAVN__for_Camera_Ready.pdf">
-          			<img src="./files/paper.png" style="height:270px" class="img-fluid" alt="Responsive image">
-          		</a>
-          	  <br>
-		      <a href=""><button type="button" class="btn btn-secondary">Paper</button></a>           
-		    </div>
 
-		    <div class="col-lg">
-		        <a href="./files/0046_poster.pdf">
-          			<img src="./files/poster-fsaavn_01.jpg" style="height:270px" class="img-fluid" alt="Responsive image">
-          		</a>
-          	  <br>
-		      <a href="./files/0046_poster.pdf"><button type="button" class="btn btn-secondary">Poster</button></a>   
-		    </div>
-		    
-
-		   	<div class="col-lg">
-		      <a href="https://github.com/yyf17/FSAAVN/tree/main">
-		    		<img src="./files/FSAAVN.png" style="height:270px" class="img-fluid" alt="Responsive image">
-		    	</a>
-		      <br>
-		      <a href="https://github.com/yyf17/FSAAVN/tree/main"><button type="button" class="btn btn-secondary">Code</button></a>  
-		    </div> 
-
-		  </div> 
-
-		  <br><br>
-		  <div class="row">
-		  	<div class="col-lg">
-		  		<h2>Presentation</h2>
-			    	<div class=text-center>
-				    
-                		<iframe width="560" height="315" src="./files/0046_video.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-		  </div>
-
-			
-		
-          <br><br>
 		  <div class="row">
 		  	<div class="col-sm">
 		  		<h2> Citation </h2>
 		  		    <pre align="left">
-					@inproceedings{Yu_2022_BMVC,
-					author    = {Yinfeng Yu andXinjiang University and Lele Cao and Fuchun Sun and Xiaohong Liu and Liejun Wang},
-					title     = {Pay Self-Attention to Audio-Visual Navigation},
-					booktitle = {33rd British Machine Vision Conference 2022, {BMVC} 2022, London, UK, November 21-24, 2022},
-					year      = {2022}
-					}
+                            @article{10.1162/neco_a_01579,
+                                author = {Yu, Yinfeng and Cao, Lele and Sun, Fuchun and Yang, Chao and Lai, Huicheng and Huang, Wenbing},
+                                title = {Echo-Enhanced Embodied Visual Navigation},
+                                journal = {Neural Computation},
+                                volume = {35},
+                                number = {5},
+                                pages = {958-976},
+                                year = {2023},
+                                month = {04},
+                                issn = {0899-7667},
+                                doi = {10.1162/neco_a_01579},
+                                url = {https://doi.org/10.1162/neco\_a\_01579},
+                                eprint = {https://direct.mit.edu/neco/article-pdf/35/5/958/2079357/neco\_a\_01579.pdf},
+                            }
                     </pre>
 			</div>
 		  </div>
-			
-		 <br><br>
-		<br><br />
-
-		 <div class="row">
-		  	<div class="col-sm">
-		  		<h2> Example navigation video clips </h2><p></p>
-		  	</div>
-		  </div>
-
-		 <div class="row">
-
-
-			<div class="col-lg">
-		  		<h4>1:Matterport3D-Depth-AV-WaN-splt0.34.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-AV-WaN-splt0.34.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-			 
-			 <div class="col-lg">
-		  		<h4>2:Matterport3D-Depth-CMHM-splt0.56.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-CMHM-splt0.56.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-			 
-			 <div class="col-lg">
-		  		<h4>3:Matterport3D-Depth-FSAAVN-splt0.90.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-FSAAVN-splt0.90.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>4:Matterport3D-Depth-SoundSpaces-EM-splt0.82.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-SoundSpaces-EM-splt0.82.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-
-			<div class="col-lg">
-		  		<h4>5:Matterport3D-Depth-SoundSpaces-EMul-splt0.76.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-SoundSpaces-EMul-splt0.76.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-			 
-			 <div class="col-lg">
-		  		<h4>6:Matterport3D-Depth-SoundSpaces-splt0.66.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-Depth-SoundSpaces-splt0.66.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-			 
-			 <div class="col-lg">
-		  		<h4>7:Matterport3D-RGBD-FSAAVN-splt0.89.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-RGBD-FSAAVN-splt0.89.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>8:Matterport3D-RGBD-SoundSpaces-splt0.67.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Matterport3D-RGBD-SoundSpaces-splt0.67.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-
-		  	<div class="col-lg">
-		  		<h4>9:Replica-Depth-AV-WaN-splt0.17.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-AV-WaN-splt0.17.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>10:Replica-Depth-CMHM-splt0.29.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-CMHM-splt0.29.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-		  	<div class="col-lg">
-		  		<h4>11:Replica-Depth-FSAAVN-splt0.89.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-FSAAVN-splt0.89.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>12:Replica-Depth-SoundSpaces-EM-splt0.62.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-SoundSpaces-EM-splt0.62.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-		  	<div class="col-lg">
-		  		<h4>13:Replica-Depth-SoundSpaces-EMul-splt0.68.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-SoundSpaces-EMul-splt0.68.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>14:Replica-Depth-SoundSpaces-splt0.79.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-Depth-SoundSpaces-splt0.79.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-		  	<div class="col-lg">
-		  		<h4>15:Replica-RGBD-FSAAVN-splt0.88.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-RGBD-FSAAVN-splt0.88.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<div class="col-lg">
-		  		<h4>16:Replica-RGBD-SoundSpaces-splt0.70.mp4</h4>
-			    	<div class=text-center>
-				    
-                		<iframe width="512" height="256" src="./demos/Replica-RGBD-SoundSpaces-splt0.70.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    
-				</div>
-		  	</div>
-
-		  	<br><br />
-
-
-		 </div>
 
 		  <div class="row">
 		  	<div class="col-sm">
 		  		<h2> Acknowledgement </h2>
 		  		<p align="left">
-	                		This work is funded by Sino-German Collaborative Research Project Crossmodal Learning with identification number NSFC62061136001/DFG SFB/TRR169.
+	                This work is funded by Sino-German Collaborative Research Project Crossmodal Learn-
+ing with identification number NSFC62061136001/DFG SFB/TRR169.
             <br><br>
 		  	</div>
 		  </div>		  
