@@ -146,7 +146,40 @@
 
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 
-                                <tr onmouseout="E3VN_stop()" onmouseover="E3VN_start()">
+               <tr onmouseout="MACMA_stop()" onmouseover="MACMA_start()">
+                    <td width="35%">
+                        <div class="one">
+                            <div class="two" id='MACMA'><img src='images/MACMA.png' alt="sym" width="100%"
+                                                                  style="border-style: none">
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            function MACMA_start() {
+                                document.getElementById('MACMA').style.opacity = "0.9";
+                            }
+
+                            function MACMA_stop() {
+                                document.getElementById('MACMA').style.opacity = "1";
+                            }
+
+                            friendly_stop()
+                        </script>
+                    </td>
+                    <td valign="top" width="65%">
+                        <p><a href="">
+                            <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
+                            <heading>Measuring Acoustics with Collaborative Multiple Agents</heading>
+                            <a class="github-button" href="https://github.com/yyf17/MACMA" data-icon="octicon-star"
+                               data-show-count="true">Star</a>
+                        </a><br>
+                            <strong>Yinfeng Yu</strong>, Changan Chen, Lele Cao, Fangkai Yang, Fuchun Sun <br>
+                            <em>IJCAI 2023<br></em>
+                            <a href="">paper</a> |
+                            <a href="MACMA/index.html">project</a> 
+                    </td>
+                </tr>
+                   
+               <tr onmouseout="E3VN_stop()" onmouseover="E3VN_start()">
                     <td width="35%">
                         <div class="one">
                             <div class="two" id='E3VN'><img src='images/E3VN.png' alt="sym" width="100%"
