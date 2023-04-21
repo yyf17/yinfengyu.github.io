@@ -75,11 +75,19 @@
 		  <div class="row">
 		  	<div style="font-size:16px">
 				<p align="justify">
-                             	The illustration of echo enhanced embodied 3D visual navigation. (a) Visual navi-
-				gation under excellent lighting conditions. (b) Under poor lighting conditions, the performance
-				of traditional visual navigation is degraded. (c) We propose to equip the robot with a sound
-				generator, the environmental echo of which is used to maintain good navigation performance in
-				poor lighting conditions.
+					Visual navigation involves a movable robotic agent striving to reach a point goal (target
+					location) using vision sensory input. While navigation with ideal visibility has seen
+					plenty of success, it becomes challenging in sub-optimal visual conditions like poor
+					illumination, where the traditional approaches suffer from severe performance degra-
+					dation. We propose E3VN (echo enhanced embodied visual navigation) to effectively
+					perceive the surroundings even under poor visibility to mitigate this problem. This is
+					made possible by adopting an echoer that actively perceives the environment via audi-
+					tory signals. E3VN models the robot agent as playing a cooperative Markov game with
+					that echoer. The action policies of robot and echoer are jointly optimized to maximize
+					the reward in a two-stream actor-critic architecture. During optimization, the reward is
+					also adaptively decomposed into the robot and echoer parts. Our experiments and abla-
+					tion studies show that E3VN is consistently effective and robust in point goal navigation
+					tasks, especially under non-ideal visibility.
 		  		</p>
 		  	</div>
 		  </div>
